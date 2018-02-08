@@ -86,7 +86,11 @@ console.log(difference);
  * Console.log `product` to test your code.
 */
 
-
+function multiply(num1, num2){
+	return num1 * num2;
+}
+var product = multiply(bango2, bango1);
+console.log(product);
 
 /*
  * #5
@@ -102,8 +106,11 @@ console.log(difference);
  * Console.log `quotient` to test your code.
 */
 
-
-
+function divide(num1, num2){
+	return num1 / num2;
+}
+var quotient = divide(bango1, bango2);
+console.log(quotient);
 /*
  * #6
  * Function - checkSum
