@@ -244,7 +244,11 @@ console.log(multiplyThenDivide(bango3, bango4, bango5));
  *  This function `returns` back a string which represents someone's full name. Invoke this function by passing in your first  and last name into the function. Store the return value into a variable named `myFullName` and console.log this variable to show your result.
 */
 
-
+function createFullName(firstName, lastName){
+	return firstName + ' ' + lastName;
+}
+var myFullName = createFullName('Reese', 'Akamine');
+console.log(myFullName);
 
 /*
  * #13 
@@ -260,6 +264,11 @@ console.log(multiplyThenDivide(bango3, bango4, bango5));
  * Console.log your result.
  */
 
+function eatFood(firstName, lastName, food){
+	return createFullName(firstName, lastName) + ' eats ' + food + ' everyday for breakfast.';
+}
+
+console.log(eatFood('Reese', 'Akamine', 'bacon'));
 
 
 /************** ENGAGE HYPERDRIVE **************/
@@ -275,8 +284,11 @@ console.log(multiplyThenDivide(bango3, bango4, bango5));
  * Console.log your result. 
 */
 
-
-
+function shoeSize(inches){
+	var cm = inches * 2.54;
+	return cm;
+}
+console.log(shoeSize(2));
 /*
  * #15
  * Function allCaps
@@ -287,7 +299,12 @@ console.log(multiplyThenDivide(bango3, bango4, bango5));
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
  
+ var believe = "believe you can and you're halfway there.";
+function allCaps(str){
+	return str.toUpperCase();
+}
 
+console.log(allCaps(believe));
 
 /*
  * #16
@@ -297,7 +314,10 @@ console.log(multiplyThenDivide(bango3, bango4, bango5));
  * Console.log your result.
 */
 
-
+function oneCap(str){
+	return str.charAt(0).toUpperCase() + str.slice(1);
+}
+console.log(oneCap(believe));
 
 /*
  * #17
@@ -310,7 +330,12 @@ console.log(multiplyThenDivide(bango3, bango4, bango5));
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
 
+function verifyDrinkingAge(age){
+	return age >= 21;
+}
 
+var canDrink = verifyDrinkingAge(22);
+console.log(canDrink);
 
 /**
  * #18
@@ -318,8 +343,15 @@ console.log(multiplyThenDivide(bango3, bango4, bango5));
  * Create a function named throwParty. This function will check the value stored in the `canDrink` variable in the previous exercise. If the value is true, it will return the message "Cheee Hoo! We going to da party!" If false, then it will return the message "Meh, see you at Starbucks." Store the return value to a variable named `canParty`. Console.log your result.
  */
 
-
-
+function throwParty(){
+	if(canDrink === true){
+		return "Chee Hoo! We going to da party!";
+	} else {
+		return "Meh, see you at Starbucks.";
+	}
+}
+var canParty = throwParty();
+console.log(canParty);
 
 
 
