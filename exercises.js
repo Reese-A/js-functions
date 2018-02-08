@@ -127,7 +127,7 @@ console.log(quotient);
 function checkSum(x){
 	return 'Mariah Carey has been married ' + x + ' times.'
 }
-var daDiva = checkSum(3);
+var daDiva = checkSum(sum);
 console.log(daDiva);
 
 /*
@@ -142,7 +142,10 @@ console.log(daDiva);
  * Console.log your results.
 */ 
 
-
+function checkDifference(x){
+	return 'Last night I dreamt that I ate ' + x + ' Taco Bell soft tacos,';
+}
+console.log(checkDifference(difference));
 
 /*
  * #8
@@ -155,7 +158,11 @@ console.log(daDiva);
  * Console.log your result.  
 */
 
-
+function checkProduct(){
+	return sum * product;
+}
+var productResult = checkProduct();
+console.log(productResult);
 
 /*
  * #9
@@ -167,6 +174,12 @@ console.log(daDiva);
  * This function will multiply the values stored in the product and quotient variables.
  * Console.log your result.  
 */
+
+function checkQuotient(){
+	return product * quotient;
+}
+var quotientResult = checkQuotient();
+console.log(quotientResult);
 
 /*
  * Declare three variables
@@ -187,8 +200,16 @@ console.log(daDiva);
  * This function will add the first two parameters together. Then with the sum of that operation, subtract it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
  * Console.log your result.
 */ 
+var bango3 = 3;
+var bango4 = 4;
+var bango5 = 5;
 
 
+function addThenSubtract(num1, num2, num3){
+	var sum = add(num1, num2);
+	return subtract(sum, num3);
+}
+console.log(addThenSubtract(bango3, bango4, bango5));
 
 /*
  * #11
@@ -204,7 +225,12 @@ console.log(daDiva);
  * Console.log your result.
 */ 
 
+function multiplyThenDivide(num1, num2, num3){
+	var product = multiply(num1, num2);
+	return divide(num3, product)
+}
 
+console.log(multiplyThenDivide(bango3, bango4, bango5));
 
 /*
  * #12
