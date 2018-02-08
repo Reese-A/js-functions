@@ -111,6 +111,7 @@ function divide(num1, num2){
 }
 var quotient = divide(bango1, bango2);
 console.log(quotient);
+
 /*
  * #6
  * Function - checkSum
@@ -123,7 +124,11 @@ console.log(quotient);
  * Console.log your result.
 */
 
-
+function checkSum(x){
+	return 'Mariah Carey has been married ' + x + ' times.'
+}
+var daDiva = checkSum(3);
+console.log(daDiva);
 
 /*
  * #7
